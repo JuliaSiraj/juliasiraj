@@ -54,7 +54,7 @@ nav ul li a {
 #hero {
     flex: 1;
     background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     height: 70vh;
     background-color: #fff; /* Ta bort den gråa bakgrunden, använd vit istället */
 }
