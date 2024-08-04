@@ -54,9 +54,13 @@ nav ul li a {
 #hero {
     flex: 1;
     background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
-    background-size: contain; /* Ändrad bakgrundsstorlek */
+    background-size: contain;
     height: 70vh;
     position: relative;
+}
+
+#hero img {
+    display: none;
 }
 
 #info {
@@ -118,10 +122,15 @@ footer {
     }
 
     #hero {
-        height: 50vh;
+        height: 50vh; /* Justera höjd för mobilversion */
+        background-size: cover; /* Använd cover för att säkerställa att bilden täcker hela området */
     }
 
     #info {
         flex: 1;
+    }
+
+    #hero img {
+        display: none;
     }
 }
