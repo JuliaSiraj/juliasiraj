@@ -54,7 +54,7 @@ nav ul li a {
 #hero {
     flex: 1;
     background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     height: 70vh;
     position: relative;
 }
@@ -104,7 +104,7 @@ a {
 }
 
 a:hover {
-    color: #333333; /* Mörkgrå färg vid hover */
+    color: #666666; /* Mörkgrå färg vid hover */
     text-decoration: underline;
 }
 
