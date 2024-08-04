@@ -56,11 +56,7 @@ nav ul li a {
     background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
     background-size: contain;
     height: 70vh;
-    position: relative;
-}
-
-#hero img {
-    display: none;
+    background-color: #f0f0f0; /* Lägg till en bakgrundsfärg för att synliggöra området */
 }
 
 #info {
