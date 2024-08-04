@@ -46,8 +46,7 @@ nav ul li a {
 
 #hero-about {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
     padding: 2rem 0;
 }
 
@@ -62,8 +61,12 @@ nav ul li a {
     display: none;
 }
 
-#about {
+#about, #events, #contact {
     flex: 1;
+    padding: 1rem;
+}
+
+#about {
     padding-left: 2rem;
 }
 
@@ -109,4 +112,19 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #hero-about {
+        flex-direction: column;
+    }
+
+    #about, #events, #contact {
+        padding: 1rem 0;
+    }
+
+    #hero {
+        height: 50vh;
+    }
 }
