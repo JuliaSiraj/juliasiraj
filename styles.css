@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     line-height: 1.6;
     color: #000000;
 }
@@ -27,7 +27,7 @@ header {
 
 header h1 {
     font-size: 1.5rem;
-    font-weight: bold; /* Fetstil för header */
+    font-weight: bold;
 }
 
 nav ul {
@@ -54,13 +54,9 @@ nav ul li a {
 #hero {
     flex: 1;
     background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
-    background-size: contain;
+    background-size: contain; /* Ändrad bakgrundsstorlek */
     height: 70vh;
     position: relative;
-}
-
-#hero img {
-    display: none;
 }
 
 #info {
@@ -82,12 +78,12 @@ nav ul li a {
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    font-weight: bold; /* Fetstil för titlar */
+    font-weight: bold;
 }
 
 p {
     margin-bottom: 1rem;
-    font-weight: normal; /* Normalstil för brödtext */
+    font-weight: normal;
 }
 
 ul {
@@ -127,12 +123,5 @@ footer {
 
     #info {
         flex: 1;
-    }
-
-    #hero img {
-        display: block;
-        width: 100%;
-        height: auto;
-        visibility: hidden;
     }
 }
