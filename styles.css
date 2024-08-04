@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.875rem; /* Öka storleken med 25% från 1.5rem */
     font-weight: bold;
 }
 
@@ -104,6 +104,7 @@ a {
 }
 
 a:hover {
+    color: #333333; /* Mörkgrå färg vid hover */
     text-decoration: underline;
 }
 
