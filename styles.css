@@ -43,7 +43,7 @@ header h1 {
 #hero {
     flex: 1;
     background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     height: 70vh;
     border-radius: 15px; /* Rundade hörn för hero-bilden */
     position: relative;
