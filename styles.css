@@ -18,18 +18,20 @@ header {
 
 .header-container {
     display: flex;
+    justify-content: center; /* Centrera titel på mobil */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    position: relative; /* För att kunna justera titeln exakt */
+    position: relative;
 }
 
 header h1 {
     font-size: 1.875rem; /* Öka storleken med 25% från 1.5rem */
     font-weight: bold;
-    margin-left: auto; /* Justera till vänster */
-    margin-right: auto; /* Centrerar titeln horisontellt */
+    text-align: center; /* Centrerar texten inom h1 */
+    margin-left: auto; /* För att flytta texten mer åt höger på desktop */
+    margin-right: auto; /* För att flytta texten mer åt vänster på mobil */
 }
 
 #hero-about {
@@ -105,6 +107,15 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .header-container {
+        justify-content: center; /* Centrerar titeln på mobil */
+    }
+
+    header h1 {
+        margin-left: 0; /* Ingen extra marginal på mobil */
+        margin-right: 0; /* Ingen extra marginal på mobil */
+    }
+
     #hero-about {
         flex-direction: column;
     }
