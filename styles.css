@@ -61,17 +61,14 @@ nav ul li a {
     display: none;
 }
 
-#about, #events, #contact {
-    flex: 1;
-    padding: 1rem;
+#info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
 }
 
-#about {
-    padding-left: 2rem;
-}
-
-section {
-    padding: 2rem 0;
+#info section {
+    margin-bottom: 2rem;
 }
 
 .content-container {
@@ -120,11 +117,11 @@ footer {
         flex-direction: column;
     }
 
-    #about, #events, #contact {
-        padding: 1rem 0;
-    }
-
     #hero {
         height: 50vh;
+    }
+
+    #info {
+        flex: 1;
     }
 }
