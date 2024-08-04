@@ -18,7 +18,7 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Flytta till vänsterhörnet på desktop */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -33,6 +33,7 @@ header h1 {
 nav ul {
     list-style: none;
     display: flex;
+    margin-left: auto; /* Flytta navigeringen till höger */
 }
 
 nav ul li {
