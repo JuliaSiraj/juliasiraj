@@ -27,7 +27,7 @@ header {
 }
 
 header h1 {
-    font-size: 1.875rem; /* Öka storleken med 25% från 1.5rem */
+    font-size: 3.75rem; /* Dubbelt så stor som tidigare 1.875rem */
     font-weight: bold;
     text-align: center; /* Centrerar texten inom h1 */
     margin-left: auto; /* För att flytta texten mer åt höger på desktop */
