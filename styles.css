@@ -52,9 +52,10 @@ nav ul li a {
 
 #hero {
     flex: 1;
-    background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat top center;
+    background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
     background-size: cover;
     height: 70vh;
+    position: relative;
 }
 
 #hero img {
@@ -123,5 +124,12 @@ footer {
 
     #info {
         flex: 1;
+    }
+
+    #hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        visibility: hidden;
     }
 }
