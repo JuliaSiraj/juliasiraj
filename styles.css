@@ -44,17 +44,27 @@ nav ul li a {
     font-size: 1rem;
 }
 
-#hero {
-    background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
-    background-size: contain;
-    height: 70vh;
+#hero-about {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+#hero {
+    flex: 1;
+    background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat top center;
+    background-size: cover;
+    height: 70vh;
 }
 
 #hero img {
     display: none;
+}
+
+#about {
+    flex: 1;
+    padding-left: 2rem;
 }
 
 section {
