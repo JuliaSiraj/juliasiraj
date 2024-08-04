@@ -43,14 +43,11 @@ header h1 {
 #hero {
     flex: 1;
     background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     height: 70vh;
     border-radius: 15px; /* Rundade hörn för hero-bilden */
     position: relative;
-}
-
-#hero img {
-    display: none; /* Bilden som fallback, om den behövs */
+    overflow: hidden; /* För att säkerställa att rundade hörn fungerar korrekt */
 }
 
 #info {
@@ -113,8 +110,7 @@ footer {
     }
 
     #hero {
-        height: auto; /* Justera höjd för att passa innehåll */
-        background-size: cover; /* Täcker hela området */
+        height: 50vh; /* Justera höjd för mobilversion */
         border-radius: 15px; /* Rundade hörn för hero-bilden */
     }
 
