@@ -45,8 +45,8 @@ nav ul li a {
 }
 
 #hero {
-    background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat top center;
-    background-size: cover;
+    background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
+    background-size: contain;
     height: 70vh;
     display: flex;
     justify-content: center;
