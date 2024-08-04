@@ -45,11 +45,12 @@ header h1 {
     background: url('Pressbild_7_DSC6723_MASTER.jpg') no-repeat center center;
     background-size: contain;
     height: 70vh;
+    border-radius: 15px; /* Rundade hörn för hero-bilden */
     position: relative;
 }
 
 #hero img {
-    display: none;
+    display: none; /* Bilden som fallback, om den behövs */
 }
 
 #info {
@@ -107,32 +108,17 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .header-container {
-        justify-content: center; /* Centrerar titeln på mobil */
-    }
-
-    header h1 {
-        margin-left: 0; /* Ingen extra marginal på mobil */
-        margin-right: 0; /* Ingen extra marginal på mobil */
-    }
-
     #hero-about {
-        flex-direction: column;
+        flex-direction: column; /* Ställ texten under bilden */
     }
 
     #hero {
-        height: 50vh; /* Justera höjd för mobilversion */
+        height: auto; /* Justera höjd för att passa innehåll */
         background-size: cover; /* Täcker hela området */
+        border-radius: 15px; /* Rundade hörn för hero-bilden */
     }
 
     #info {
         flex: 1;
-    }
-
-    #hero img {
-        display: block;
-        width: 100%;
-        height: auto;
-        visibility: hidden;
     }
 }
