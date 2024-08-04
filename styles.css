@@ -18,22 +18,28 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: flex-start; /* Flytta till vänsterhörnet på desktop */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative; /* Lägg till för att kunna justera titeln exakt */
 }
 
 header h1 {
     font-size: 1.875rem; /* Öka storleken med 25% från 1.5rem */
     font-weight: bold;
+    position: absolute; /* Gör det möjligt att positionera exakt */
+    left: 0; /* Flytta till vänster */
+    margin-left: 0; /* Säkerställ att det inte finns extra marginal */
+}
+
+nav {
+    margin-left: auto; /* Flytta navigeringen till höger */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: auto; /* Flytta navigeringen till höger */
 }
 
 nav ul li {
